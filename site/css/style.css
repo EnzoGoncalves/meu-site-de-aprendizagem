@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+/* GERAL */
 
 * {
     margin: 0;
@@ -21,7 +22,7 @@ h1 {
     background-color: rgb(84, 224, 178);
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0px;
     box-shadow: 0px 5px 10px grey;
     margin-bottom: 15px;
 }
@@ -56,3 +57,6 @@ fieldset {
     width: 100%;
     border: none;
 }
+
+/*CONTEÚDO*/
+
