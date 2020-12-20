@@ -11,23 +11,27 @@
     <div id="navegacao">
         <h1 id="enzo">Enzo Mateus - Listas</h1>
         <fieldset>
-            <h3 class="h3-navegacao"><a href="../index.html" target="_self" class="a-navegacao">Sobre</a></h3>
-            <h3 class="h3-navegacao"><a href="../estudando.html" target="_self" class="a-navegacao">Estudando</a></h3>
+            <h3 class="h3-navegacao"><a href="../html-css.html" target="_self" class="a-navegacao">HTML/CSS</a></h3>
+            <h3 class="h3-navegacao"><a href="../index.html" target="_self"class="a-navegacao">HOME</a></h3>
+            <h3 class="h3-navegacao"><a href="" target="_self" class="a-navegacao">JavaScript</a></h3>
         </fieldset>
     </div>
     <!-- CONTEÚDO -->
+    <!--Lista ordenadas-->
     <h1>Listas</h1>
     <br>
     <h2>Listas ORDENADAS:</h2>
-    <p>São listas numeradas e podem ser feitas com a tag &ltol&gt, com mais ou 1 . Um exemplo de uma lista ordenada:</p>
-    <ol type="">
-        <li>Valorant</li>
+    <p>As listas ordenadas são listas numeradas e podem ser feitas com a tag &ltol&gt, usando &ltli&gt em cada linha. Um exemplo de uma lista ordenada:</p>
+    <p>Classificação dos jogos preferidos:</p>
+    <br>
+    <ol type="1">
         <li>Rocket League</li>
+        <li>Valorant</li>
         <li>Fortnite</li>
     </ol>
     <br>
     <p>O código:</p> <br>
-    &ltol&gt <br>
+    &ltol type="1"&gt <br>
     &ltli&gt Valorant &lt/li&gt <br>
     &ltli&gt Rocket League &lt/li&gt <br>
     &ltli&gt Fortnite &lt/li&gt <br>
@@ -43,8 +47,31 @@
         <li type="I"> <span style="color: red;">I</span> - A lista será numerada por letras romanas maiúsculas</li>
         <li type="i"> <span style="color: red;">i</span> - A lista será numerada por letras romanas minúsculas</li>
     </ol>
+    <br>
+    <p>Especificamente na lista não ordenada, podemos usar o parâmetro <i>start</i> para dizer de qual contagem a lista irá começar.</p>
+    <br>
+    <!--Lista não ordenada-->
+    <h2>Listas não ordenada</h2>
+    <br>
+    <p>As listas não ordenadas são listas sem numeração e podem ser feitas com a tag &ltul&gt, usando &ltli&gt em cada linha. Um exemplo de uma lista não ordenada:</p>
 
-    <p><a href="../navegacao.html">aaa</a></p>
-
+    <p>Lista de compras:</p>
+    <br>
+    <ul type="disc">
+        <li>Queijo</li>
+        <li>Pão</li>
+        <li>Requeijão</li>
+        <li>Suco de laranja</li>
+        <li>Salada</li>
+    </ul>
+    <br>
+    <p>O código:</p> <br>
+    &ltul type="disc"&gt <br>
+    &ltli&gt Queijo &lt/li&gt <br>
+    &ltli&gt Pão &lt/li&gt <br>
+    &ltli&gt Requeijão &lt/li&gt <br>
+    &ltli&gt Suco de Laranja &lt/li&gt <br>
+    &ltli&gt Salada &lt/li&gt <br>
+    &lt/ul&gt <br>
 </body>
 </html>
