@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Display</title>
+
+    <style>
+        .display {
+            padding: 20px;
+            background-color: rgb(158, 255, 214);
+            display: inline-block;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .button-display {
+            background: green;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+            padding: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div id="navegacao">
+        <h1 id="enzo">Enzo Mateus - Display</h1>
+        <fieldset>
+            <h3 class="h3-navegacao"><a href="../html-css.html" target="_self" class="a-navegacao">HTML/CSS</a></h3>
+            <h3 class="h3-navegacao"><a href="../index.html" target="_self"class="a-navegacao">HOME</a></h3>
+            <h3 class="h3-navegacao"><a href="" target="_self" class="a-navegacao">JavaScript</a></h3>
+        </fieldset>
+    </div> 
+    <!-- CONTEÚDO -->
+    <h1>CSS Layout - A Propriedade Display</h1>
+    <p>A propriedade <span class="elemento">display</span> é a propriedade mais importante do CSS para controlar o layout.</p><br>
+    <h2>The display Property</h2>
+    <p>A propriedade <span class="elemento">display</span> especifica se/como um elemento é exibido.</p><br>
+    <p>Cada elemento HTML tem um valor de exibição padrão dependendo de que tipo de elemento é ele. O valor de padrão para a maioria dos elementos é <span class="elemento">block</span> ou <span class="elemento">inline</span>.</p>
+
+    <!--Exemplo 1-->
+    <button onclick="mostraDiv()">Clique aqui para aparecer um elemento vermelho</button>
+    <button onclick="tiraDiv()">Clique aqui para desaparecer o elemento vermelho</button>
+
+    <div class="div1" style="width: 90%; height: 20px; display: none; background-color: red; border: 1px solid blue;"></div>
+
+    <!--Block-level-->
+    <h2>Block-level Elements</h2>
+    <p>Um elemento nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo que pode).</p>
+    <div style="border: 2px solid green;">O elemento &ltdiv&gt é um elemento de nível de bloco.</div><br>
+    <p>Exemplos de elementos de nível de bloco: </p><br>
+    <ul>
+        <li>&ltdiv&gt</li>
+        <li>&lth1&gt - &lth6&gt</li>
+        <li>&ltp&gt</li>
+        <li>&ltform&gt</li>
+        <li>&ltheader&gt</li>
+        <li>&ltfooter&gt</li>
+        <li>&ltsection&gt</li>
+    </ul><br>
+
+    <!--Inline level-->
+    <h2>Inline Elements</h2>
+    <p>Um elemento inline não começa em uma nova linha e só ocupa a largura necessária</p>
+    <p>Este é <span style="border: 2px solid green;">um elemento &ltspan&gt embutido dentro de</span> um parágrafo.</p><br>
+    <p>Exemplos de elementos inline:</p><br>
+    <ul>
+        <li>&ltspan&gt</li>
+        <li>&lta&gt</li>
+        <li>&ltimg&gt</li>
+    </ul><br>
+
+    <!--Display: none-->
+    <h2>Display: none;</h2>
+    <p><span class="elemento">display: none; </span>é comumente usado com JavaScript para ocultar e mostrar elementos sem deletá-los ou recriá-los. Dê uma olhada no nosso último exemplo nesta página se você quer saber como isto pode ser alcançado</span></p><br>
+    <p>O <span class="elemento">&ltscript&gt</span> elemento usa <span class="elemento">display: none;</span> como padrão.</p><br>
+
+    <h2>Override (substituir) o display padrão de um elemento</h2>
+    <p>Conforme mencionado, cada elemento tem um valor de exibição padrão. No entanto, você pode substituir isso.</p><br>
+    <p>Alterar um elemento embutido para um elemento de bloco, ou vice-versa, pode ser útil para fazer a página parecer de uma maneira específica e ainda seguir os padrões da web.</p><br>
+    <p>Um exemplo comum é criar <span class="elemento">&ltli&gt</span> elementos embutidos para menus horizontais:</p>
+    <ul>
+        <li style="display: inline;"><a>Home</a></li>
+        <li style="display: inline;"><a>Sobre</a></li>
+        <li style="display: inline;"><a>Contato</a></li>
+    </ul>
+
+    <div class="nota">Nota: Definir a propriedade display de um elemento muda apenas <strong>como o elemento é exibido</strong>, NÃO que tipo de elemento ele é. Portanto, um elemento embutido com <span class="elemento">display: block;</span> não pode ter outros elementos de block dentro dele.</div><br>
+
+    <!--Exemplo 2-->
+    <h2>Hider an Element - display:none or visibility:hidden?</h2><br>
+
+    <div class="display-none display">
+        <p><span class="elemento">display: none</span></p>
+        <button class="button-display" onclick="tiraDiv2()">Remove</button>
+    </div>
+
+    <div class="display-hidden display">
+        <p><span class="elemento">visibility: hidden</span></p>
+        <button class="button-display" onclick="escondeDiv()">Hide</button>
+    </div>
+
+    <div class="display">
+        <p>Reset</p>
+        <button class="button-display" onclick="resetaDivs()">Reset All</button>
+    </div>
+
+    <p>Esconder um elemento pode ser feito configurando a propriedade <span class="elemento">display</span> para <span class="elemento">none</span>. O elemento estará escondido, e a página exibirá como se o elemento não estivesse lá.</p><br>
+
+    <p><span class="elemento">visibility:hidden;</span> também esconde um elemento.</p><br>
+    <p>No entando, o elemento ainda vai estar ocupando o mesmo espaço de antes. O elemento estará escondido, mas ainda afentando o layout da página, como vimos no exemplo acima.</p>
+ 
+    <!--Script-->
+    <script>
+        // Exemplo 1
+        function mostraDiv() {  
+            const div1 = document.querySelector('.div1');
+            div1.style.display="block";
+            return div1;
+        }
+        function tiraDiv() {  
+            const div1 = document.querySelector('.div1');
+            div1.style.display="none";
+            return div1;
+        }
+
+        //Exemplo 2
+
+        function tiraDiv2() {  
+            const div2 = document.querySelector('.display-none');
+            div2.style.display="none";
+            return div2;
+        }
+
+        function escondeDiv() {
+            const div2 = document.querySelector('.display-hidden');
+            div2.style.visibility="hidden";
+            return div2;
+        }
+
+        function resetaDivs() {
+            const div2 = document.querySelector('.display-none');
+            div2.style.display="inline-block";
+            const div3 = document.querySelector('.display-hidden');
+            div3.style.visibility="visible";
+            return div2, div3;
+        }
+    </script>
+    </body>
+</html>
