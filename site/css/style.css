@@ -60,3 +60,17 @@ fieldset {
 
 /*CONTEÚDO*/
 
+.elemento {
+    letter-spacing: 0.7px;
+    color: rgb(255, 0, 0);
+    background-color: #a7a7a74d;
+    padding: 2px;
+    font-weight: 550;
+}
+
+.nota {
+    background-color: #ffffc1;
+    line-height: 23px;
+    padding: 20px;
+    margin: 10px;
+}
