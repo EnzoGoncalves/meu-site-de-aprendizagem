@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/site/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Float</title>
+</head>
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <div id="navegacao">
+        <h1 id="enzo">Enzo Mateus - Float</h1>
+        <fieldset>
+            <h3 class="h3-navegacao"><a href="../../html/html-css.html" target="_self" class="a-navegacao">HTML/CSS</a></h3>
+            <h3 class="h3-navegacao"><a href="../../../index.html" target="_self"class="a-navegacao">HOME</a></h3>
+            <h3 class="h3-navegacao"><a href="" target="_self" class="a-navegacao">JavaScript</a></h3>
+        </fieldset>
+    </div>
+    <!-- CONTEÚDO -->
+
+    <h1>CSS Layout - float and clear</h1>
+    <br>
+
+    <p>A <span class="elemento">float</span> propriedade CSS especifica como um elemento deve flutuar.</p><br>
+    <p>A <span class="elemento">clear</span> propriedade CSS especifica quais elementos podem flutuar ao lado do elemento limpo e em que lado.</p><br><br>
+
+    <h2>A propriedade float</h2>
+    <br>
+    <p>A propriedade <span class="elemento">float</span> é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.</p><br>
+    <p>A propriedade <span class="elemento">float</span> pode ter um dos seguintes valores:</p><br>
+
+    <ul>
+        <li>left - O elemento flutua para a esquerda do contêiner</li>
+        <li>right - O elemento flutua para a direita do contêiner</li>
+        <li>none - o elemento não flutua (será exibido apenas onde no texto ocorre). Este é o valor padrão</li>
+        <li>inherit - O elemento herda o valor float do pai (parent)</li>
+    </ul><br>
+
+    <!--Float right-->
+
+    <div id="div-box1">
+        <h2>Exemplo - float: right;</h2>
+        <br>
+
+        <p>O exemplo a seguir especifíca que uma imagem deve flutuar para a direita em um texto:</p><br>
+
+        <p id="p-box"><img id="img1" src="imagens/lorem-ipsum.png" alt="Lorme ipsum" width="100px" height="100px" style="margin-left:15px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis..</p>
+    </div>
+
+    <!--Float left-->
+
+    <div id="div-box2">
+        <h2>Exemplo - float: left;</h2>
+        <br>
+
+        <p>O exemplo a seguir especifíca que uma imagem deve flutuar para a esquerda em um texto:</p><br>
+
+        <p id="p-box"><img id="img2" src="imagens/lorem-ipsum2.png" alt="Lorme ipsum" width="100px" height="100px" style="margin-right:15px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis..</p>
+    </div>
+    <br><br><br>
+
+    <!--Sem float-->
+    
+    <div id="div-box3a">
+        <h2>Exemplo - No float;</h2>
+        <br>
+
+        <p>O exemplo a seguir a imagem será exibida onde ocorreu no texto (<span class="elemento">float: none;</span>)</p><br>
+
+        <p id="p-box"><img id="img3" src="imagens/lorem-ipsum3.jpg" alt="Lorme ipsum" width="100px" height="100px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis</p>
+    </div>
+    <br><br>
+
+    <!--Clear e clearfix-->
+
+    <h1>CSS Layout - clear and clearfix</h1><br>
+
+    <h2>The clear Property</h2>
+    <br>
+
+    <p>A <span class="elemento">clear</span> propriedade especifica qual elemento pode flutuar atrás ao lado do elemento limpo e em qual lado.</p><br>
+
+    <p>A <span class="elemento">clear</span> propriedade pode ter um dos seguintes valores:</p><br>
+
+    <ul>
+        <li>none - permite elementos flutuantes em ambos os lados. Este é o valor padrão.</li>
+        <li>left - nenhum elemento flutuante permitido no lado esquerdo</li>
+        <li>right - não são permitidos elementos flutuantes no lado direito.</li>
+        <li>both - nenhum elemento flutuante permitido no lado esquerdo ou direito</li>
+        <li>inherit - o elemento herda o valor clear de seu pai (parent) </li>
+    </ul>
+    <br>
+
+    <p>A maneira mais comum de usar a <span class="elemento">clear</span> propriedade é depois de usar uma <span class="elemento">float</span> propriedade em um elemento.</p><br>
+
+    <p>Ao limpar os floats, você deve combinar o clear com o float: Se um elemento for flutuado para esquerda, você deve limpa para a esquerda. Seu elemento continuará a flutar, mas o elemento clear aparecerá abaixo dele na página web.</p><br>
+
+    <!--Clearfix-->
+    <h2>Clearfix</h2>
+
+    <p>Neste exemplo, a imagem é mais alta que o conteúdo do elemento é, e está flutuando, então está ultrapassando para fora do conteiner:</p><br>
+
+    <div id="clearfix-box">
+    <div class="clear-div">
+        <img class="img4" src="imagens/lorem-ipsum2.png" alt="lorem-ipsum" width="100" height="100">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div><br><br><br><br>
+
+    <p style="clear: right">Adicione uma classe clearfix com overflow: auto; para o conteúdo do conteiner, para arrumar o problema:</p><br>
+
+    <div class="clearfix clear-div">
+        <img class="img5" src="imagens/lorem-ipsum2.png" alt="lorem-ipsum" width="100" height="100">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+    </div>
+
+    <p>Então podemos adicionar <span class="elemento">overflow: auto;</span> ao elemento que o contém para corrigir este problema.</p><br>
+
+    <p>O <span class="elemento">overflow: auto</span> clearfix funciona bem desde que você consiga manter o controle de suas margens e paddins (caso contrário, você pode ver barras de rolagem). O <strong>novo e moderno hack do clearfix</strong> entretando, é mais seguro de usar. </p>
+
+</body>
+</html>

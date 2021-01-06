@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+#conteiner {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 15px;
+    height: auto;
+}
+
+/* Float */
+
+#img1 {
+    float: right;
+}
+
+#img2 {
+    float: left;
+}
+
+#p-box {
+    border: 2px solid black;
+    padding: 10px;
+    width: 600px;
+}   
+
+#div-box1 {
+    border-right: 2px solid black;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#div-box2 {
+    display: inline-block;
+}
+
+#div-box3 {
+    display: block;
+}
+
+/*Clearfix*/
+
+#clearfix-box {
+    border: 3px solid black;
+    padding: 10px;
+    margin:10px;
+    width: 800px;
+}
+
+.clear-div {
+border: 3px solid #4CAF50;
+padding: 5px;
+}
+
+.img4 {
+float: right;
+}
+
+.clearfix {
+overflow: auto;
+}
+
+.img5 {
+float: right;
+}
