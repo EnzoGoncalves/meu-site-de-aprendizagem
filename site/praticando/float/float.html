@@ -23,11 +23,12 @@
     <h1>CSS Layout - float and clear</h1>
     <br>
 
-    <p>A <span class="elemento">float</span> propriedade CSS especifica como um elemento deve flutuar.</p><br>
-    <p>A <span class="elemento">clear</span> propriedade CSS especifica quais elementos podem flutuar ao lado do elemento limpo e em que lado.</p><br><br>
+    <p>A propriedade CSS <span class="elemento">float</span> especifica como um elemento deve flutuar.</p><br>
+    <p>A propriedade CSS <span class="elemento">clear</span> especifica quais elementos podem flutuar ao lado do elemento limpo e em que lado.</p><br><br>
 
     <h2>A propriedade float</h2>
     <br>
+
     <p>A propriedade <span class="elemento">float</span> é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.</p><br>
     <p>A propriedade <span class="elemento">float</span> pode ter um dos seguintes valores:</p><br>
 
@@ -36,7 +37,8 @@
         <li>right - O elemento flutua para a direita do contêiner</li>
         <li>none - o elemento não flutua (será exibido apenas onde no texto ocorre). Este é o valor padrão</li>
         <li>inherit - O elemento herda o valor float do pai (parent)</li>
-    </ul><br>
+    </ul>
+    <br><br>
 
     <!--Float right-->
 
@@ -83,9 +85,9 @@
     <h2>The clear Property</h2>
     <br>
 
-    <p>A <span class="elemento">clear</span> propriedade especifica qual elemento pode flutuar atrás ao lado do elemento limpo e em qual lado.</p><br>
+    <p>A propriedade <span class="elemento">clear</span> especifica qual elemento pode flutuar atrás ao lado do elemento limpo e em qual lado.</p><br>
 
-    <p>A <span class="elemento">clear</span> propriedade pode ter um dos seguintes valores:</p><br>
+    <p>A propriedade <span class="elemento">clear</span> pode ter um dos seguintes valores:</p><br>
 
     <ul>
         <li>none - permite elementos flutuantes em ambos os lados. Este é o valor padrão.</li>
@@ -96,12 +98,13 @@
     </ul>
     <br>
 
-    <p>A maneira mais comum de usar a <span class="elemento">clear</span> propriedade é depois de usar uma <span class="elemento">float</span> propriedade em um elemento.</p><br>
+    <p>A maneira mais comum de usar a propriedade <span class="elemento">clear</span> é depois de usar a propriedade <span class="elemento">float</span> em um outro elemento.</p><br>
 
     <p>Ao limpar os floats, você deve combinar o clear com o float: Se um elemento for flutuado para esquerda, você deve limpa para a esquerda. Seu elemento continuará a flutar, mas o elemento clear aparecerá abaixo dele na página web.</p><br>
 
     <!--Clearfix-->
     <h2>Clearfix</h2>
+    <br>
 
     <p>Neste exemplo, a imagem é mais alta que o conteúdo do elemento é, e está flutuando, então está ultrapassando para fora do conteiner:</p><br>
 
@@ -121,7 +124,7 @@
 
     <p>Então podemos adicionar <span class="elemento">overflow: auto;</span> ao elemento que o contém para corrigir este problema.</p><br>
 
-    <p>O <span class="elemento">overflow: auto</span> clearfix funciona bem desde que você consiga manter o controle de suas margens e paddins (caso contrário, você pode ver barras de rolagem). O <strong>novo e moderno hack do clearfix</strong> entretando, é mais seguro de usar. </p>
+    <p>O <span class="elemento">overflow: auto</span> funciona bem desde que você consiga manter o controle de suas margens e paddins (caso contrário, você pode ver barras de rolagem).</p>
 
 </body>
 </html>

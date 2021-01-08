@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="/site/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <title>Display</title>
-
     <style>
         .display {
             padding: 20px;
@@ -15,6 +14,7 @@
             align-items: center;
             text-align: center;
             margin: 10px;
+            border: 1.5px solid black;
         }
 
         .button-display {
@@ -39,20 +39,28 @@
     </div> 
     <!-- CONTEÚDO -->
     <h1>CSS Layout - A Propriedade Display</h1>
+    <br>
+
     <p>A propriedade <span class="elemento">display</span> é a propriedade mais importante do CSS para controlar o layout.</p><br>
+
     <h2>The display Property</h2>
+    <br>
+
     <p>A propriedade <span class="elemento">display</span> especifica se/como um elemento é exibido.</p><br>
-    <p>Cada elemento HTML tem um valor de exibição padrão dependendo de que tipo de elemento é ele. O valor de padrão para a maioria dos elementos é <span class="elemento">block</span> ou <span class="elemento">inline</span>.</p>
+    <p>Cada elemento HTML tem um valor de exibição padrão dependendo de que tipo de elemento é ele. O valor de padrão para a maioria dos elementos é <span class="elemento">block</span> ou <span class="elemento">inline</span>.</p><br>
 
     <!--Exemplo 1-->
     <button onclick="mostraDiv()">Clique aqui para aparecer um elemento vermelho</button>
     <button onclick="tiraDiv()">Clique aqui para desaparecer o elemento vermelho</button>
 
     <div class="div1" style="width: 90%; height: 20px; display: none; background-color: red; border: 1px solid blue;"></div>
+    <br><br>
 
     <!--Block-level-->
     <h2>Block-level Elements</h2>
-    <p>Um elemento nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo que pode).</p>
+    <br>
+
+    <p>Um elemento nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo que pode).</p><br>
     <div style="border: 2px solid green;">O elemento &ltdiv&gt é um elemento de nível de bloco.</div><br>
     <p>Exemplos de elementos de nível de bloco: </p><br>
     <ul>
@@ -67,7 +75,9 @@
 
     <!--Inline level-->
     <h2>Inline Elements</h2>
-    <p>Um elemento inline não começa em uma nova linha e só ocupa a largura necessária</p>
+    <br>
+
+    <p>Um elemento inline não começa em uma nova linha e só ocupa a largura necessária</p><br>
     <p>Este é <span style="border: 2px solid green;">um elemento &ltspan&gt embutido dentro de</span> um parágrafo.</p><br>
     <p>Exemplos de elementos inline:</p><br>
     <ul>
@@ -78,17 +88,20 @@
 
     <!--Display: none-->
     <h2>Display: none;</h2>
+    <br>
+
     <p><span class="elemento">display: none; </span>é comumente usado com JavaScript para ocultar e mostrar elementos sem deletá-los ou recriá-los. Dê uma olhada no nosso último exemplo nesta página se você quer saber como isto pode ser alcançado</span></p><br>
     <p>O <span class="elemento">&ltscript&gt</span> elemento usa <span class="elemento">display: none;</span> como padrão.</p><br>
 
-    <h2>Override (substituir) o display padrão de um elemento</h2>
+    <h2>Override (sobrepor) o display padrão de um elemento</h2>
+    <br>
     <p>Conforme mencionado, cada elemento tem um valor de exibição padrão. No entanto, você pode substituir isso.</p><br>
     <p>Alterar um elemento embutido para um elemento de bloco, ou vice-versa, pode ser útil para fazer a página parecer de uma maneira específica e ainda seguir os padrões da web.</p><br>
     <p>Um exemplo comum é criar <span class="elemento">&ltli&gt</span> elementos embutidos para menus horizontais:</p>
     <ul>
-        <li style="display: inline;"><a>Home</a></li>
-        <li style="display: inline;"><a>Sobre</a></li>
-        <li style="display: inline;"><a>Contato</a></li>
+        <li style="display: inline;"><a href="">Home</a></li>
+        <li style="display: inline;"><a href="">Sobre</a></li>
+        <li style="display: inline;"><a href="">Contato</a></li>
     </ul>
 
     <div class="nota">Nota: Definir a propriedade display de um elemento muda apenas <strong>como o elemento é exibido</strong>, NÃO que tipo de elemento ele é. Portanto, um elemento embutido com <span class="elemento">display: block;</span> não pode ter outros elementos de block dentro dele.</div><br>

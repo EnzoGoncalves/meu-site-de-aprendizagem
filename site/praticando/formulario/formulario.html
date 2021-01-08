@@ -26,22 +26,39 @@
     <!-- CONTEÚDO -->
     <h1>Formulário</h1>
     <br>
-    <h2>O &ltform&gt elemento </h2>
+
+    <h2>O Elemento &ltform&gt</h2>
+    <br>
+
     <p>O <span class="elemento">&ltform&gt</span> elemento HTML é usado para criar um formulário HTML para entrada do usuário.</p><br>
     <p>O <span class="elemento">&ltform&gt</span> elemento é um container para diferentes tipos de entrada, como: campos de textos, caixas de seleção. botões de opção, botão de envio, etc.</p><br>
-    <h2>O &ltinput&gt elemento </h2>
-    <p>O <span class="elemento">&ltinput&gt</span> elemento HTML é o elemento de formulário mais usado.</p>
-    <p>Um <span class="elemento">&ltinput&gt</span> pode ser exibido de várias maneiras, dependendo do <i>type</i> atributo</p><br>
+
+    <!--input element-->
+    <h2>O Elemento &ltinput&gt </h2>
+    <br>
+
+    <p>O elemento HTML <span class="elemento">&ltinput&gt</span> é o elemento de formulário mais usado.</p><br>
+    <p>Um <span class="elemento">&ltinput&gt</span> pode ser exibido de várias maneiras, dependendo do atributo <strong><i>type</i></strong>.</p><br>
+
     <h2>Text Fields</h2>
-    <p>O <span class="elemento">&ltinput type="text"&gt</span> define um campo de entrada de linha única para entrada de texto</p><br>
-    <h2>The &ltlabel&gt Element</h2>
-    <p>A <span class="elemento">&ltlabel&gt</span> tag define um rótulo para muitos elementos do formulário.</p>
-    <p>O <span class="elemento">&ltlabel&gt</span> elemento é útil para usuários de leitores de tela, porque o leitor de tela lerá em voz alta o rótulo quando o usuário focar no elemento de entrada.</p>
-    <p>O <span class="elemento">&ltlabel&gt</span> elemento também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas porque quando o usuário clica no texto dentro do <span class="elemento">&ltlabel&gt</span> elemento, ele alterna para o radio button / checkbox</p>
-    <p>O <span class="elemento">for</span> atributo da <span class="elemento">&ltlabel&gt</span> tag deve ser igual ao <span class="elemento">id</span> atributo do <span class="elemento">&ltinput&gt</span> elemento para uni-los.</p><br>
+    <br>
+
+    <p>O <span class="elemento">&ltinput type="text"&gt</span> define um campo de entrada de linha única para entrada de texto.</p><br>
+
+    <!--label element-->
+    <h2>O Elemento &ltlabel&gt </h2>
+    <br>
+
+    <p>A tag <span class="elemento">&ltlabel&gt</span> define um rótulo para muitos elementos do formulário.</p><br>
+    <p>O elemento <span class="elemento">&ltlabel&gt</span> é útil para usuários de leitores de tela, porque o leitor de tela lerá em voz alta o rótulo quando o usuário focar no elemento de entrada.</p><br>
+    <p>O elemento <span class="elemento">&ltlabel&gt</span> também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas porque quando o usuário clica no texto dentro do elemento <span class="elemento">&ltlabel&gt</span>, ele alterna para o radio button / checkbox.</p><br>
+    <p>O atributo <span class="elemento">for</span> da tag <span class="elemento">&ltlabel&gt</span> deve ser igual ao atributo  <span class="elemento">id</span> do elemento <span class="elemento">&ltinput&gt</span> para uni-los.</p><br>
+
     <h2>CheckBoxes</h2>
-    <p>O <span class="elemento">&ltinput type="checkbox&gt</span> define uma <strong>checkbox.</strong></p>
-    <p>As checkboxes permitem o usuário selecionar zero ou mais opçãos de um número limitado de escolhas</p>
+    <br>
+    
+    <p>O <span class="elemento">&ltinput type="checkbox"&gt</span> define uma <strong>checkbox.</strong></p><br>
+    <p>As checkboxes permitem o usuário selecionar zero ou mais opçãos de um número limitado de escolhas.</p>
 
     
     <!--Meu formulário-->
@@ -50,14 +67,16 @@
         <h2>Meu formulário</h2>
         <form>
         <label for="pnome">Primeiro Nome:</label><br>
-        <input type="text" id="pnome"><br>
+        <input type="text" id="pnome"><br><br>
         <label for="unome">Último Nome:</label><br>
-        <input type="text" id="unome"><br>
+        <input type="text" id="unome"><br><br>
+
         <input type="radio" id="rmasc" value="rmasc" name="genero">
         <label for="rmasc">Masculino</label><br>
         <input type="radio" id="rfemin" value="rfemin" name="genero">
-        <label for="rfemin">Feminino</label><br><br>
-        <p>Tenho: </p>
+        <label for="rfemin">Feminino</label><br><br><br>
+
+        <p>Tenho: </p><br>
         <input type="checkbox" id="bike" value="bike">
         <label for="bike">Bicicleta</label><br>
         <input type="checkbox" id="comp" value="comp">
