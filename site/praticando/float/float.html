@@ -19,12 +19,12 @@
         </fieldset>
     </div>
     <!-- CONTEÚDO -->
-
     <h1>CSS Layout - float and clear</h1>
     <br>
-
+    
     <p>A propriedade CSS <span class="elemento">float</span> especifica como um elemento deve flutuar.</p><br>
     <p>A propriedade CSS <span class="elemento">clear</span> especifica quais elementos podem flutuar ao lado do elemento limpo e em que lado.</p><br><br>
+    
 
     <h2>A propriedade float</h2>
     <br>
@@ -48,7 +48,7 @@
 
         <p>O exemplo a seguir especifíca que uma imagem deve flutuar para a direita em um texto:</p><br>
 
-        <p id="p-box"><img id="img1" src="imagens/lorem-ipsum.png" alt="Lorme ipsum" width="100px" height="100px" style="margin-left:15px;">
+        <p id="p-box"><img id="img1" src="imagens/lorem-ipsum.png" alt="Lorme ipsum" width="100" height="100" style="margin-left:15px;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis..</p>
     </div>
 
@@ -60,20 +60,20 @@
 
         <p>O exemplo a seguir especifíca que uma imagem deve flutuar para a esquerda em um texto:</p><br>
 
-        <p id="p-box"><img id="img2" src="imagens/lorem-ipsum2.png" alt="Lorme ipsum" width="100px" height="100px" style="margin-right:15px;">
+        <p id="p-box"><img id="img2" src="imagens/lorem-ipsum2.png" alt="Lorme ipsum" width="100" height="100" style="margin-right:15px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis..</p>
     </div>
     <br><br><br>
 
     <!--Sem float-->
     
-    <div id="div-box3a">
+    <div id="div-box3">
         <h2>Exemplo - No float;</h2>
         <br>
 
         <p>O exemplo a seguir a imagem será exibida onde ocorreu no texto (<span class="elemento">float: none;</span>)</p><br>
 
-        <p id="p-box"><img id="img3" src="imagens/lorem-ipsum3.jpg" alt="Lorme ipsum" width="100px" height="100px">
+        <p id="p-box"><img id="img3" src="imagens/lorem-ipsum3.jpg" alt="Lorme ipsum" width="100" height="100">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis</p>
     </div>
     <br><br>
@@ -117,14 +117,16 @@
     <p style="clear: right">Adicione uma classe clearfix com overflow: auto; para o conteúdo do conteiner, para arrumar o problema:</p><br>
 
     <div class="clearfix clear-div">
-        <img class="img5" src="imagens/lorem-ipsum2.png" alt="lorem-ipsum" width="100" height="100">
+        <img class="img5" src="imagens/lorem-ipsum2.png" alt="lorem-ipsum" width="100px" height="100">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
     </div>
     </div>
 
     <p>Então podemos adicionar <span class="elemento">overflow: auto;</span> ao elemento que o contém para corrigir este problema.</p><br>
 
-    <p>O <span class="elemento">overflow: auto</span> funciona bem desde que você consiga manter o controle de suas margens e paddins (caso contrário, você pode ver barras de rolagem).</p>
+    <p>O <span class="elemento">overflow: auto</span> funciona bem desde que você consiga manter o controle de suas margens e paddins (caso contrário, você pode ver barras de rolagem).</p><br>
 
+    <!--float exemplos-->
+    <button class="float-exemplo-button" type="button" onclick="location.href='float-exemplos.html'">Float Exemplos</button>
 </body>
 </html>
