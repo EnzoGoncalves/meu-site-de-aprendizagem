@@ -5,27 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Display</title>
-    <style>
-        .display {
-            padding: 20px;
-            background-color: rgb(158, 255, 214);
-            display: inline-block;
-            align-items: center;
-            text-align: center;
-            margin: 10px;
-            border: 1.5px solid black;
-        }
-
-        .button-display {
-            background: green;
-            color: white;
-            cursor: pointer;
-            width: 100px;
-            padding: 5px;
-            margin-top: 15px;
-        }
-    </style>
 </head>
 <body>
     <!-- BARRA DE NAVEGAÇÃO -->
@@ -54,7 +35,7 @@
     <button onclick="tiraDiv()">Clique aqui para desaparecer o elemento vermelho</button>
 
     <div class="div1" style="width: 90%; height: 20px; display: none; background-color: red; border: 1px solid blue;"></div>
-    <br><br>
+    <br><br><hr><br>
 
     <!--Block-level-->
     <h2>Block-level Elements</h2>
@@ -71,7 +52,7 @@
         <li>&ltheader&gt</li>
         <li>&ltfooter&gt</li>
         <li>&ltsection&gt</li>
-    </ul><br>
+    </ul><br><hr><br>
 
     <!--Inline level-->
     <h2>Inline Elements</h2>
@@ -84,14 +65,14 @@
         <li>&ltspan&gt</li>
         <li>&lta&gt</li>
         <li>&ltimg&gt</li>
-    </ul><br>
+    </ul><br><hr><br>
 
     <!--Display: none-->
     <h2>Display: none;</h2>
     <br>
 
     <p><span class="elemento">display: none; </span>é comumente usado com JavaScript para ocultar e mostrar elementos sem deletá-los ou recriá-los. Dê uma olhada no nosso último exemplo nesta página se você quer saber como isto pode ser alcançado</span></p><br>
-    <p>O <span class="elemento">&ltscript&gt</span> elemento usa <span class="elemento">display: none;</span> como padrão.</p><br>
+    <p>O <span class="elemento">&ltscript&gt</span> elemento usa <span class="elemento">display: none;</span> como padrão.</p><br><hr><br>
 
     <h2>Override (sobrepor) o display padrão de um elemento</h2>
     <br>
@@ -102,9 +83,9 @@
         <li style="display: inline;"><a href="">Home</a></li>
         <li style="display: inline;"><a href="">Sobre</a></li>
         <li style="display: inline;"><a href="">Contato</a></li>
-    </ul>
+    </ul><br><hr><br>
 
-    <div class="nota">Nota: Definir a propriedade display de um elemento muda apenas <strong>como o elemento é exibido</strong>, NÃO que tipo de elemento ele é. Portanto, um elemento embutido com <span class="elemento">display: block;</span> não pode ter outros elementos de block dentro dele.</div><br>
+    <div class="nota">Nota: Definir a propriedade display de um elemento muda apenas <strong>como o elemento é exibido</strong>, NÃO que tipo de elemento ele é. Portanto, um elemento embutido com <span class="elemento">display: block;</span> não pode ter outros elementos de block dentro dele.</div><br><hr><br>
 
     <!--Exemplo 2-->
     <h2>Hider an Element - display:none or visibility:hidden?</h2><br>
