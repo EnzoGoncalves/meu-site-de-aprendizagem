@@ -26,3 +26,21 @@
     position: relative;
     text-align: center;
 }
+
+.background {
+    background: url(imagens/porDoSoljpg.jpg) repeat;
+    border: 2px solid black;
+}
+
+.caixa-transparente {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+.caixa-transparente p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000;
+}
