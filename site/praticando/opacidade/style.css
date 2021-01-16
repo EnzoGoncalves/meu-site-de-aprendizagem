@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.img-hover {
+    opacity: 0.5;
+}
+
+.img-hover:hover {
+    opacity: 1.0;
+}
+
+.box-opacity {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(37, 161, 37);
+    margin: 0px 0px 0px -4px;
+    position: relative;
+    text-align: center;
+}
+
+.box-opacity-rgba {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 0px 0px 0px -4px;
+    position: relative;
+    text-align: center;
+}
