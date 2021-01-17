@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+p.borda1 {
+    border: 15px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-image: url(imagens/bordapng.png) 30 round;
+}
+
+p.borda2 {
+    border: 15px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-image: url(imagens/bordapng.png) 30 stretch;
+}

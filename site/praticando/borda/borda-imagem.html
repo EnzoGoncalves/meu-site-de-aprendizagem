@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Imagem na Borda</title>
+</head>
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header id="navegacao">
+        <h1 id="enzo">Enzo Mateus - Imagem na Borda</h1>
+        <nav>
+            <h3 class="h3-navegacao"><a href="../../html/html-css.html" target="_self" class="a-navegacao">HTML/CSS</a></h3>
+            <h3 class="h3-navegacao"><a href="../../../index.html" target="_self"class="a-navegacao">HOME</a></h3>
+            <h3 class="h3-navegacao"><a href="" target="_self" class="a-navegacao">JavaScript</a></h3>
+        </nav>
+    </header> 
+    <!-- CONTEÚDO -->
+    <h1>CSS - Imagem nas bordas</h1>
+    <br>
+
+    <h2>Propriedade border-image</h2>
+    <br>
+
+    <p>A propriedade CSS <span class="elemento">border-image</span> te permite especificar uma imagem a ser usada na borda de um elemento em vez da borda normal.</p><br>
+    <p>A propriedade tem três partes:</p><br>
+    <ol>
+        <li>A imagem a ser usada como borda.</li>
+        <li>Onde cortar a imagem.</li>
+        <li>Definir se as seções do meio devem ser repetidas ou alongadas.</li>
+    </ol>
+    <br><br>
+    <p style="display: inline-block;">Usarei a seguinte imagem: <img src="imagens/bordapng.png" alt="Imagem da borda" style="display: inline-block; vertical-align: middle; margin-left: 10px;"></p>
+    <br><br>
+
+    <p>A propriedade <span class="elemento">border-image</span> pega a imagem e a corta em nove seções, como um jogo da velha. Em seguida, ele posiciona os cantos nos cantos e as seções do meio são repetidas ou esticadas conforme você especificar.</p><br>
+    <p><strong>Nota:</strong> Para <span class="elemento">border-image</span> funcionar, o elemento também precisa da propriedade <span class="elemento">border</span> definida.</p><br>
+
+    <p>Aqui, as seções do meio da imagem são repetidas para criar a borda:</p><br>
+
+    <p class="borda1">Uma imagem como borda!</p>
+    <br><br><br>
+
+    <p>Aqui, o meio das seções da imagem são esticadas para criar a borda:</p><br>
+
+    <p class="borda2">Uma imagem como borda!</p>
+    <br><br>
+
+    <div class="nota">
+        <p><strong>Dica:</strong> A propriedade <span class="elemento">border-image</span> é na verdade um atalho para as propriedades <span class="elemento">border-image-source</span>, <span class="elemento">border-image-slice</span>, <span class="elemento">border-image-width</span>, <span class="elemento">border-image-outset</span> e <span class="elemento">border-image-repeat</span>.</p>
+    </div>
+</body>
+</html>
