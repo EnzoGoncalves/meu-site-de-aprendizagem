@@ -104,4 +104,6 @@ h1 {
 
 hr {
     opacity: 0.5;
+    width: 97%;
+    margin: auto;
 }
