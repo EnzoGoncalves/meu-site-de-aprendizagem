@@ -1,5 +1,41 @@
 @charset "UTF-8";
 
+section {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section h3 {
+    text-align: center;
+    margin-top: 13px;
+}
+
+fieldset {
+    width: 80%;
+    margin: auto;
+}
+
+.gradiente {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    width: 90%;
+    margin: auto;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
 .grad1 {
     height: 120px;
     text-align: center;
@@ -31,12 +67,18 @@
 .grad5 {
     height: 120px;
     text-align: center;
-    font-size: 45px;
-    color: rgb(95, 95, 95);
-    font-weight: 800;
     background-color: red;
     background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet)
 }
+
+.grad5 p {
+    padding: 27px 0px;
+    font-size: 45px;
+    color: rgb(179, 179, 179);
+    font-weight: 800;
+    display: inline-block;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}   
 
 .grad6 {
     height: 120px;
@@ -51,14 +93,13 @@
 .grad8 {
     height: 150px;
     text-align: center;
-    font-weight: 800;
-    margin: 0px 15px;
-    font-size: 30px;
     background-color: red;
     background-image: linear-gradient(to bottom right, rgb(255, 153, 0) 30%, rgb(0, 255, 221));
 }
 
 .grad8 p {
     color: #fff;
-    padding: 45px 0px;
+    padding: 55px 0px;
+    font-weight: 800;
+    font-size: 30px;
 }

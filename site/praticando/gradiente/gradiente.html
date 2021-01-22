@@ -1,95 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Formulário</title>
-    <style>
-        #formulario {
-            margin: 10px;
-            border: 1px solid black;
-        }
-    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Gradiente</title>
 </head>
+
 <body>
     <!-- BARRA DE NAVEGAÇÃO -->
 <header id="navegacao">
-    <h1 id="enzo">Enzo Mateus - Formulário</h1>
+    <h1 id="enzo">Enzo Mateus - Gradiente</h1>
     <nav>
         <h3 class="h3-navegacao"><a href="../../html/html-css.html" target="_self" class="a-navegacao">HTML/CSS</a></h3>
         <h3 class="h3-navegacao"><a href="../../../index.html" target="_self"class="a-navegacao">HOME</a></h3>
         <h3 class="h3-navegacao"><a href="" target="_self" class="a-navegacao">JavaScript</a></h3>
     </nav>
 </header>
-    <!-- CONTEÚDO -->
+<!-- CONTEÚDO -->
 
-<h1>CSS gradientes</h1>
-<br><br>
-<div class="grad8"><p>Gradient Backgrounds</p></div>
-<br><br>
+<section>
+    <h1>CSS gradientes</h1>
+    
+    <div class="grad8 gradiente"><p>Gradient Backgrounds</p></div>
+    
+    <p>Gradientes te deixam exibir transições suaves entre duas ou mais cores especificadas.</p><br>
+    <p>CSS define dois tipos de gradientes:</p><br>
+    
+    <ul>
+        <li>Gradiente linear (vai para baixo/cima/esquerda/deireita/diagonalmente)</li>
+        <li>Gradientes radiais (definido pelo seu centro)</li>
+    </ul>
+</section>
 
-<p>Gradientes te deixam exibir transições suaves entre duas ou mais cores especificadas.</p><br>
-<p>CSS define dois tipos de gradientes:</p><br>
+<section>
+    <h2>Gradiente Linear</h2>
+    <br>
+    
+    <p>Para criar um gradiente linear é preciso definir ao menos duas interrupções de cor. As paradas de cor são as cores entre as quais você deseja renderizar transições suaves. Você também pode definir um ponto inicial e uma direção (ou um ângulo) junto com o efeito de gradiente.</p><br>
+    
+    <p>Sintaxe:</p>
+    
+    <fieldset>
+        <p>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
+    </fieldset><br><hr>
+    
+    <h3>Direção - de cima para baixo (este é o padrão)</h3>
+    
+    <div class="grad1 gradiente"><p>De cima para baixo (padrão)</p></div><hr>
+    
+    <h3>Direação - da esquerda para a direita</h3>
+    
+    <div class="grad2 gradiente"><p>Da esquerda para a direita</p></div><hr>
+    
+    <h3>Direção - Diagonal</h3>
+    
+    <p>Você pode fazer um gradiente diagonalmente especificando as posições iniciais horizontal e vertical.</p><br>
+    <p>O exemplo a seguir mostra um gradiente linear que começa no canto superior esquerdo (e vai para o inferior direito). Ele começa vermelho, mudando para amarelo:</p><br>
+    
+    <div class="grad3 gradiente"><p>superior esquerdo para inferior direito</p></div>
+</section>
 
-<ul>
-    <li>Gradiente linear (vai para baixo/cima/esquerda/deireita/diagonalmente)</li>
-    <li>Gradientes radiais (definido pelo seu centro)</li>
-</ul><br><hr><br>
+<section>
+    <h2>Usando ângulos</h2>
+    <br>
+    
+    <p>Se você quiser ter mais controle sobre a direção do gradiente, pode definir um ângulo, em vez das direções predefinidas. Um valor de 0deg é equivalente a "to top". Um valor de 90deg é equivalente a "à direita". Um valor de 180deg é equivalente a "to bottom".</p><br>
+    
+    <p>Sintaxe:</p>
+    <fieldset><p>background-image: linear-gradient(angle, color-stop1, color-stop2);</p></fieldset><br>
+    
+    <div class="grad4 gradiente"><p>180deg</p></div>
+</section>
 
-<h2>Gradiente Linear</h2>
-<br>
+<section>
+    <h2>Usando tranparência</h2>
+    <br>
+    
+    <p>Gradiente também suporta transparência, o que pode ser usado para criar efeitos de desbotamento.</p><br>
+    <p>Para adicionar transparência, usamos a função rgba() para definir a parada de cor. O último parâmetro na função rgba() pode ter um valor de 0 até 1, e é definido a transparência da cor: 0 indica totalmente transparente, 1 indica totalmente com cor (sem transparência).</p><br>
+    
+    <div class="grad6 gradiente"></div>
+</section>
 
-<p>Para criar um gradiente linear é preciso definir ao menos duas interrupções de cor. As paradas de cor são as cores entre as quais você deseja renderizar transições suaves. Você também pode definir um ponto inicial e uma direção (ou um ângulo) junto com o efeito de gradiente.</p><br>
+<section>
+    <div class="grad5 gradiente"><p>Rainbow Background</p></div>
+</section>
 
-<p>Sintaxe:</p>
+<section>
+    <h2>Repetindo linear-gradient</h2>
+    <br>
+    
+    <p>A função repeating-linear-gradient() é usada para repitir linear-gradient. Exemplo:</p>
+    
+    <div class="grad7 gradiente"></div>
+</section>
 
-<fieldset>
-    <p>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
-</fieldset><br><br>
-
-<h3>Direção - de cima para baixo (este é o padrão)</h3><br>
-
-<div class="grad1"><p>De cima para baixo (padrão)</p></div><br><hr><br>
-
-<h3>Direação - da esquerda para a direita</h3><br>
-
-<div class="grad2"><p>Da esquerda para a direita</p></div><br><hr><br>
-
-<h3>Direção - Diagonal</h3><br>
-
-<p>Você pode fazer um gradiente diagonalmente especificando as posições iniciais horizontal e vertical.</p><br>
-<p>O exemplo a seguir mostra um gradiente linear que começa no canto superior esquerdo (e vai para o inferior direito). Ele começa vermelho, mudando para amarelo:</p><br>
-
-<div class="grad3"><p>superior esquerdo para inferior direito</p></div><br><hr><br>
-
-<h2>Usando ângulos</h2>
-<br>
-
-<p>Se você quiser ter mais controle sobre a direção do gradiente, pode definir um ângulo, em vez das direções predefinidas. Um valor de 0deg é equivalente a "to top". Um valor de 90deg é equivalente a "à direita". Um valor de 180deg é equivalente a "to bottom".</p><br>
-
-<p>Sintaxe:</p>
-<fieldset><p>background-image: linear-gradient(angle, color-stop1, color-stop2);</p></fieldset><br>
-
-<div class="grad4"><p>180deg</p></div><br><hr><br>
-
-<div class="grad5"><p>Rainbow Background</p></div><br><hr><br>
-
-<h2>Usando tranparência</h2>
-<br>
-
-<p>Gradiente também suporta transparência, o que pode ser usado para criar efeitos de desbotamento.</p><br>
-<p>Para adicionar transparência, usamos a função rgba() para definir a parada de cor. O último parâmetro na função rgba() pode ter um valor de 0 até 1, e é definido a transparência da cor: 0 indica totalmente transparente, 1 indica totalmente com cor (sem transparência).</p><br>
-
-<div class="grad6"></div><br><hr><br>
-
-<h2>Repetindo linear-gradient</h2>
-<br>
-
-<p>A função repeating-linear-gradient() é usada para repitir linear-gradient. Exemplo:</p><br>
-
-<div class="grad7"></div>
+<footer>
+    <p>Copyright&copy; | Todos os direitos reservados a Enzo Mateus</p>
+</footer>
 </body>
 </html>
