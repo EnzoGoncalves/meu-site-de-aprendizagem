@@ -19,31 +19,30 @@
     </nav>
 </header> 
 <!-- CONTEÚDO -->
+<section>
 <h1>CSS Layout - A Propriedade Display</h1>
-<br>
 
 <p>A propriedade <span class="elemento">display</span> é a propriedade mais importante do CSS para controlar o layout.</p><br>
-
-<h2>The display Property</h2>
-<br>
-
 <p>A propriedade <span class="elemento">display</span> especifica se/como um elemento é exibido.</p><br>
 <p>Cada elemento HTML tem um valor de exibição padrão dependendo de que tipo de elemento é ele. O valor de padrão para a maioria dos elementos é <span class="elemento">block</span> ou <span class="elemento">inline</span>.</p><br>
 
 <!--Exemplo 1-->
+<div class="ex1">
 <button onclick="mostraDiv()">Clique aqui para aparecer um elemento vermelho</button>
 <button onclick="tiraDiv()">Clique aqui para desaparecer o elemento vermelho</button>
+</div>
 
-<div class="div1" style="width: 90%; height: 20px; display: none; background-color: red; border: 1px solid blue;"></div>
-<br><br><hr><br>
+<div class="div1" style="width: 90%; height: 20px; display: none; background-color: red; border: 1px solid black; margin: auto;"></div>
+</section>
 
 <!--Block-level-->
+<section>
 <h2>Block-level Elements</h2>
-<br>
 
 <p>Um elemento nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo que pode).</p><br>
 <div style="border: 2px solid green;">O elemento &ltdiv&gt é um elemento de nível de bloco.</div><br>
 <p>Exemplos de elementos de nível de bloco: </p><br>
+
 <ul>
     <li>&ltdiv&gt</li>
     <li>&lth1&gt - &lth6&gt</li>
@@ -52,11 +51,12 @@
     <li>&ltheader&gt</li>
     <li>&ltfooter&gt</li>
     <li>&ltsection&gt</li>
-</ul><br><hr><br>
+</ul>
+</section>
 
 <!--Inline level-->
+<section>
 <h2>Inline Elements</h2>
-<br>
 
 <p>Um elemento inline não começa em uma nova linha e só ocupa a largura necessária</p><br>
 <p>Este é <span style="border: 2px solid green;">um elemento &ltspan&gt embutido dentro de</span> um parágrafo.</p><br>
@@ -65,31 +65,40 @@
     <li>&ltspan&gt</li>
     <li>&lta&gt</li>
     <li>&ltimg&gt</li>
-</ul><br><hr><br>
+</ul>
+</section>
 
 <!--Display: none-->
+<section>
 <h2>Display: none;</h2>
-<br>
 
 <p><span class="elemento">display: none; </span>é comumente usado com JavaScript para ocultar e mostrar elementos sem deletá-los ou recriá-los. Dê uma olhada no nosso último exemplo nesta página se você quer saber como isto pode ser alcançado</span></p><br>
-<p>O <span class="elemento">&ltscript&gt</span> elemento usa <span class="elemento">display: none;</span> como padrão.</p><br><hr><br>
+<p>O <span class="elemento">&ltscript&gt</span> elemento usa <span class="elemento">display: none;</span> como padrão.</p>
+</section>
 
+<!--Override-->
+<section>
 <h2>Override (sobrepor) o display padrão de um elemento</h2>
-<br>
+
 <p>Conforme mencionado, cada elemento tem um valor de exibição padrão. No entanto, você pode substituir isso.</p><br>
 <p>Alterar um elemento embutido para um elemento de bloco, ou vice-versa, pode ser útil para fazer a página parecer de uma maneira específica e ainda seguir os padrões da web.</p><br>
-<p>Um exemplo comum é criar <span class="elemento">&ltli&gt</span> elementos embutidos para menus horizontais:</p>
+<p>Um exemplo comum é criar elementos <span class="elemento">&ltli&gt</span> embutidos para menus horizontais:</p><br>
 <ul>
     <li style="display: inline;"><a href="">Home</a></li>
     <li style="display: inline;"><a href="">Sobre</a></li>
     <li style="display: inline;"><a href="">Contato</a></li>
-</ul><br><hr><br>
+</ul>
+</section>
 
-<div class="nota">Nota: Definir a propriedade display de um elemento muda apenas <strong>como o elemento é exibido</strong>, NÃO que tipo de elemento ele é. Portanto, um elemento embutido com <span class="elemento">display: block;</span> não pode ter outros elementos de block dentro dele.</div><br><hr><br>
+<section>
+<div class="nota">Nota: Definir a propriedade display de um elemento muda apenas <strong>como o elemento é exibido</strong>, NÃO que tipo de elemento ele é. Portanto, um elemento embutido com <span class="elemento">display: block;</span> não pode ter outros elementos de block dentro dele.</div>
+</section>
 
 <!--Exemplo 2-->
-<h2>Hider an Element - display:none or visibility:hidden?</h2><br>
+<section>
+<h2>Hider an Element - display:none or visibility:hidden ?</h2>
 
+<div class="ex2">
 <div class="display-none display">
     <p><span class="elemento">display: none</span></p>
     <button class="button-display" onclick="tiraDiv2()">Remove</button>
@@ -104,11 +113,13 @@
     <p>Reset</p>
     <button class="button-display" onclick="resetaDivs()">Reset All</button>
 </div>
+</div>
+<br>
 
 <p>Esconder um elemento pode ser feito configurando a propriedade <span class="elemento">display</span> para <span class="elemento">none</span>. O elemento estará escondido, e a página exibirá como se o elemento não estivesse lá.</p><br>
-
 <p><span class="elemento">visibility:hidden;</span> também esconde um elemento.</p><br>
 <p>No entando, o elemento ainda vai estar ocupando o mesmo espaço de antes. O elemento estará escondido, mas ainda afentando o layout da página, como vimos no exemplo acima.</p>
+</section>
 
 <!--Script-->
 <script>
@@ -145,6 +156,11 @@ function resetaDivs() {
     div3.style.visibility="visible";
     return div2, div3;
 }
+
 </script>
+
+<footer>
+    <p>Copyright&copy; | Todos os direitos reservados a Enzo Mateus</p>
+</footer>
 </body>
 </html>
