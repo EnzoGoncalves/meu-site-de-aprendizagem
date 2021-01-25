@@ -20,89 +20,89 @@
 </header>
 <!-- CONTEÚDO -->
 <section>
-<h1>CSS Layout - A Propriedade Position</h1>
+    <h1>CSS Layout - A Propriedade Position</h1>
 
-<p>A propriedade <span class="elemento">position</span> especifíca o tipo do método do posicionamento usado para um elemento (static, relative, fixed, absolute or sticky).</p><br>
-<p>Há 5 diferentes valores para position:</p><br>
+    <p>A propriedade <span class="elemento">position</span> especifíca o tipo do método do posicionamento usado para um elemento (static, relative, fixed, absolute or sticky).</p><br>
+    <p>Há 5 diferentes valores para position:</p><br>
 
-<ul>
-    <li><span class="elemento">static</span></li>
-    <li><span class="elemento">relative</span></li>
-    <li><span class="elemento">fixed</span></li>
-    <li><span class="elemento">absolute</span></li>
-    <li><span class="elemento">sticky</span></li>
-</ul>
-<br>
+    <ul>
+        <li><span class="elemento">static</span></li>
+        <li><span class="elemento">relative</span></li>
+        <li><span class="elemento">fixed</span></li>
+        <li><span class="elemento">absolute</span></li>
+        <li><span class="elemento">sticky</span></li>
+    </ul>
+    <br>
 
-<p>Elementos são posicionados usando as propriedades top, bottom, left e right. No entanto, estas propriedades não vão funcionar a menos que a propriedade <span class="elemento">position</span> seja definida primeira. Eles também trabalham diferente dependendo do valor da position.</p>
+    <p>Elementos são posicionados usando as propriedades top, bottom, left e right. No entanto, estas propriedades não vão funcionar a menos que a propriedade <span class="elemento">position</span> seja definida primeira. Eles também trabalham diferente dependendo do valor da position.</p>
 </section>
 
 <!--position: static;-->
 <section>
-<h2>position: static;</h2>
+    <h2>position: static;</h2>
 
-<p>Elemento HTML são posicionados static por padrão</p><br>
-<p>Elementos com posicionamento static não são afetados pelas propriedades top, bottom, left e right.</p><br>
-<p>Um elemento com <span class="elemento">position: static;</span> não é posicionado de alguma maneira especial; está sempre posicionado de acordo com o fluxo normal da página</p><br>
+    <p>Elemento HTML são posicionados static por padrão</p><br>
+    <p>Elementos com posicionamento static não são afetados pelas propriedades top, bottom, left e right.</p><br>
+    <p>Um elemento com <span class="elemento">position: static;</span> não é posicionado de alguma maneira especial; está sempre posicionado de acordo com o fluxo normal da página</p><br>
 
-<div class="static">
-    <p>Este elemento div está com position: static;</p>
-</div>
+    <div class="static">
+        <p>Este elemento div está com position: static;</p>
+    </div>
 </section>
 
 <!--position: relative;-->
 <section style="overflow: hidden;">
-<h2>position: relative;</h2>
+    <h2>position: relative;</h2>
 
-<p>Um elemento com <span class="elemento">position: relative;</span> é posicionado em relação à sua posição normal.</p><br>
-<p>Definir as propriedades top, right, bottom e left de um elemento relativamente posicionado fará com qe ele seja ajustado para longe de sua posição normal. Outro conteúdo não será ajustado para caber em qualquer lacuna deixada pelo elemento.</p><br>
+    <p>Um elemento com <span class="elemento">position: relative;</span> é posicionado em relação à sua posição normal.</p><br>
+    <p>Definir as propriedades top, right, bottom e left de um elemento relativamente posicionado fará com qe ele seja ajustado para longe de sua posição normal. Outro conteúdo não será ajustado para caber em qualquer lacuna deixada pelo elemento.</p><br>
 
-<div class="relative">
-    <p>Este elemento possui position: relative;</p>
-</div>
+    <div class="relative">
+        <p>Este elemento possui position: relative;</p>
+    </div>
 
-<p>Foi usado left: 30px; e overflow:hidden; na seção para não ultrapassá-la. Por isso a borda esta cortada.</p>
+    <p>Foi usado left: 30px; e overflow:hidden; na seção para não ultrapassá-la. Por isso a borda esta cortada.</p>
 </section>
 
 <!--position: fixed;-->
 <section>
-<h2>position: fixed;</h2>
+    <h2>position: fixed;</h2>
 
-<p>Um elemento com <span class="elemento">position: fixed</span> é posicionado em relação à janela de visualização (viewport), o que quer dizer que sempre está no mesmo lugar mesmo que a página seja scrolada. As propriedades top, right, bottom, left são usadas para posicionar o elemento.</p><br>
-<p>Um elemento fixed não deixa uma lacuna na página onde normalmente estaria localizada.</p><br>
-<p>Observe o elemento fixo no canto inferior direito da página. O CSS que foi usado: <br> 
-position: fixed; bottom: 0; right: 0; width: 300px; border: 3px solid #73AD21;</p>
+    <p>Um elemento com <span class="elemento">position: fixed</span> é posicionado em relação à janela de visualização (viewport), o que quer dizer que sempre está no mesmo lugar mesmo que a página seja scrolada. As propriedades top, right, bottom, left são usadas para posicionar o elemento.</p><br>
+    <p>Um elemento fixed não deixa uma lacuna na página onde normalmente estaria localizada.</p><br>
+    <p>Observe o elemento fixo no canto inferior direito da página. O CSS que foi usado: <br> 
+    position: fixed; bottom: 0; right: 0; width: 300px; border: 3px solid #73AD21;</p>
 
-<div class="fixed">
-    Este elemento &ltdiv&gt tem <span class="elemento">position: fixed;</span>
-</div>
+    <div class="fixed">
+        Este elemento &ltdiv&gt tem <span class="elemento">position: fixed;</span>
+    </div>
 </section>
 
 <!--position: absolute;-->
 <section>
-<h2>position: absolute;</h2>
+    <h2>position: absolute;</h2>
 
-<p>Um elemento com <span class="elemento">position: absolute;</span> é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixed).</p><br>
-<p>Contudo, se um elemento posicionado de forma absoluta não tiver ancestrais posicionados, ele usa o corpo do documento e se move junto com a rolagem (scroll) da página.</p><br>
+    <p>Um elemento com <span class="elemento">position: absolute;</span> é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixed).</p><br>
+    <p>Contudo, se um elemento posicionado de forma absoluta não tiver ancestrais posicionados, ele usa o corpo do documento e se move junto com a rolagem (scroll) da página.</p><br>
 
-<p><strong>Nota:</strong> Um elemento "posicionado" é aquele cuja posição é qualquer coisa exceto <span class="elemento">static</span>.</p><br>
+    <p><strong>Nota:</strong> Um elemento "posicionado" é aquele cuja posição é qualquer coisa exceto <span class="elemento">static</span>.</p><br>
 
-<div class="relative2">
-    Este elemento &ltdiv&gt possui position: relative;
-    <div class="absolute">
-        <p>Este elemento &ltdiv&gt possui position: absolute;</p>
+    <div class="relative2">
+        Este elemento &ltdiv&gt possui position: relative;
+        <div class="absolute">
+            <p>Este elemento &ltdiv&gt possui position: absolute;</p>
+        </div>
     </div>
-</div>
 </section>
 
 <!--position: sticky;-->
 <section>
-<h2>position: sticky;</h2>
+    <h2>position: sticky;</h2>
 
-<p>Um elemento com <span class="elemento">position: sticky;</span> é posicionado baseado na posição de rolagem (scroll) do usuário.</p><br>
-<p>Um elemento sticky alterna entre <span class="elemento">relative</span> e <span class="elemento">fixed</span>, dependendo da posição da rolagem. É posicionado relative até que uma determinada posição de deslocamento seja encontrada na janela de exibição - então, ele "se fixa" no lugar (como a posição: fixed).</p><br>
+    <p>Um elemento com <span class="elemento">position: sticky;</span> é posicionado baseado na posição de rolagem (scroll) do usuário.</p><br>
+    <p>Um elemento sticky alterna entre <span class="elemento">relative</span> e <span class="elemento">fixed</span>, dependendo da posição da rolagem. É posicionado relative até que uma determinada posição de deslocamento seja encontrada na janela de exibição - então, ele "se fixa" no lugar (como a posição: fixed).</p><br>
 
-<iframe src="sticky.html" frameborder="0" width="100%"></iframe>
+    <iframe src="sticky.html" frameborder="0" width="100%"></iframe>
 </section>
 <footer>
     <p>Copyright&copy; | Todos os direitos reservados a Enzo Mateus</p>

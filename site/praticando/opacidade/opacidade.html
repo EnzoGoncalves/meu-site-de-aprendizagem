@@ -19,85 +19,98 @@
     </nav>
 </header>
 <!-- CONTEÚDO -->
-<h1>CSS Opacidade / transparência</h1>
-<br>
+<section>
+    <h1>CSS Opacidade / transparência</h1>
+    <br>
 
-<p>A propriedade <span class="elemento">opacity</span> especifica a opacidade / transparência de um elemento.</p><br><hr><br>
+    <p style="text-align: center;">A propriedade <span class="elemento">opacity</span> especifica a opacidade / transparência de um elemento.</p>
+</section>
 
-<h2>Transparência de uma imagem</h2><br>
+<section>
+    <h2>Transparência de uma imagem</h2>
 
-<p>A propriedade <span class="elemento">opacity</span> pode ter o valor de 0.0 - 1.0. Quanto menor o valor, mais transparente:</p><br>
+    <p>A propriedade <span class="elemento">opacity</span> pode ter o valor de 0.0 - 1.0. Quanto menor o valor, mais transparente:</p><br>
 
-<div style="display: inline-block;">
-    <img src="imagens/tigre.jpg" alt="tigre" width="200px" style="opacity: 0.2; margin: 0px 5px 10px 5px">
-    <p style="text-align: center;"><span class="elemento">opacity: 0.2</span></p>
-</div>
+    <div class="center-images">
+        <div style="display: inline-block;">
+            <img src="imagens/tigre.jpg" alt="tigre" width="200px" class="tiger-img" style="opacity: 0.2;">
+            <p><span class="elemento">opacity: 0.2</span></p>
+        </div>
 
-<div style="display: inline-block;">
-    <img src="imagens/tigre.jpg" alt="tigre" width="200px" style="opacity: 0.5; margin: 0px 5px 10px 5px">
-    <p style="text-align: center;"><span class="elemento">opacity: 0.5</span></p>
-</div>
+        <div style="display: inline-block;">
+            <img src="imagens/tigre.jpg" alt="tigre" width="200px"  class="tiger-img" style="opacity: 0.5;">
+            <p><span class="elemento">opacity: 0.5</span></p>
+        </div>
 
-<div style="display: inline-block;">
-    <img src="imagens/tigre.jpg" alt="tigre" width="200px" style="opacity: 1; margin: 0px 5px 10px 5px">
-    <p style="text-align: center;"><span class="elemento">opacity: 1</span> (default)</p>
-</div>
-<br><br><hr><br>
+        <div style="display: inline-block;">
+            <img src="imagens/tigre.jpg" alt="tigre" width="200px"  class="tiger-img" style="opacity: 1;">
+            <p><span class="elemento">opacity: 1</span> (default)</p>
+        </div>
+    </div>
+</section>
 
-<h2>Efeito de transparência ao passar o mouse por cima</h2>
-<br>
+<section>
+    <h2>Efeito de transparência ao passar o mouse por cima</h2>
 
-<p>A propriedade <span class="elemento">opacity</span> é frequentemente usada com o seletor <span class="elemento">hover</span> para mudar a opacidade ao passar o mouse por cima:</p><br>
+    <p>A propriedade <span class="elemento">opacity</span> é frequentemente usada com o seletor <span class="elemento">hover</span> para mudar a opacidade ao passar o mouse por cima:</p><br>
 
-<div style="display: inline-block;">
-    <img src="imagens/navio.jpg" alt="navio" width="200px" style="margin: 0px 8px" class="img-hover">
-</div>
+    <div class="center-images">
+        <div style="display: inline-block;">
+            <img src="imagens/navio.jpg" alt="navio" width="200px" class="img-hover">
+        </div>
 
-<div style="display: inline-block;">
-    <img src="imagens/submarino.jpg" alt="submarino" width="200px" style="margin: 0px 8px" class="img-hover">
-</div>
+        <div style="display: inline-block;">
+            <img src="imagens/submarino.jpg" alt="submarino" width="200px"  class="img-hover" class="img-hover">
+        </div>
 
-<div style="display: inline-block;">
-    <img src="imagens/canoa.jpg" alt="canoa" width="200px" style="margin: 0px 8px" class="img-hover">
-</div>
-<br><br><hr><br>
+        <div style="display: inline-block;">
+            <img src="imagens/canoa.jpg" alt="canoa" width="200px"  class="img-hover" class="img-hover">
+        </div>
+    </div>
+</section>
 
-<h2>Box transparente</h2>
-<br>
+<section>
+    <h2>Box transparente</h2>
 
-<p>Quando usamos a propriedade <span class="elemento">opacity</span> para adicionar transparência de fundo de um elemento, todos os filhos do elemento herdarão a mesma transparência. Isto pode fazer o texto dentro do elemento totalmente transparente e difícil de ler:</p><br>
+    <p>Quando usamos a propriedade <span class="elemento">opacity</span> para adicionar transparência de fundo de um elemento, todos os filhos do elemento herdarão a mesma transparência. Isto pode fazer o texto dentro do elemento totalmente transparente e difícil de ler:</p><br>
 
-<div style="display: inline-block;">
-    <div class="box-opacity" style="opacity: 1.0;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 1</p></div>
-    <div class="box-opacity" style="opacity: 0.6;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 0.6</p></div>
-    <div class="box-opacity" style="opacity: 0.3;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 0.3</p></div>
-    <div class="box-opacity" style="opacity: 0.1;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 0.1</p></div>
-</div>
-<br><br><hr><br>
+    <div class="center-images">
+        <div style="display: inline-block;">
+            <div class="box-opacity" style="opacity: 1.0;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 1</p></div>
+            <div class="box-opacity" style="opacity: 0.6;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 0.6</p></div>
+            <div class="box-opacity" style="opacity: 0.3;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 0.3</p></div>
+            <div class="box-opacity" style="opacity: 0.1;"><p style="position: absolute; top: 45%; left: 25%;">opacity <br> 0.1</p></div>
+        </div>
+    </div>
+</section>
 
-<h2>Transparência usando RGBA</h2>
-<br>
+<section>
+    <h2>Transparência usando RGBA</h2>
 
-<p>Caso você não queira aplicar a opacidade para os elementos filhos, como no exemplo acima, use valores de cor <strong>RGBA</strong>. No próximo exemplo configure a opacidade para a cor de fundo e não para o texto: </p><br>
+    <p>Caso você não queira aplicar a opacidade para os elementos filhos, como no exemplo acima, use valores de cor <strong>RGBA</strong>. No próximo exemplo configure a opacidade para a cor de fundo e não para o texto: </p><br>
 
-<div style="display: inline-block;">
-    <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 1.0);"><p style="position: absolute; top: 45%; left: 25%;">100%<br> opacity</p></div>
-    <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 0.6);"><p style="position: absolute; top: 45%; left: 25%;">60%<br> opacity</p></div>
-    <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 0.3);"><p style="position: absolute; top: 45%; left: 25%;">30%<br> opacity</p></div>
-    <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 0.1);"><p style="position: absolute; top: 45%; left: 25%;">10%<br> opacity</p></div>
-</div>
-<br><br>
+    <div class="center-images">
+        <div style="display: inline-block;">
+            <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 1.0);"><p style="position: absolute; top: 45%; left: 25%;">100%<br> opacity</p></div>
+            <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 0.6);"><p style="position: absolute; top: 45%; left: 25%;">60%<br> opacity</p></div>
+            <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 0.3);"><p style="position: absolute; top: 45%; left: 25%;">30%<br> opacity</p></div>
+            <div class="box-opacity-rgba" style="background-color:rgba(37, 161, 37, 0.1);"><p style="position: absolute; top: 45%; left: 25%;">10%<br> opacity</p></div>
+        </div>
+    </div>
+    <br><br>
 
-<p>Um valor de cor RGBA é especificado com: rgba(red, green, blue, <i>alpha</i>). O parâmetro <i>alpha</i> é um número entre 0.0 (totalmente transparente) e 1.0 (totalmente opaco).</p><br><hr><br>
+    <p>Um valor de cor RGBA é especificado com: rgba(red, green, blue, <i>alpha</i>). O parâmetro <i>alpha</i> é um número entre 0.0 (totalmente transparente) e 1.0 (totalmente opaco).</p>
+</section>
 
+<section>
 <h2>Texto em um contêiner transparente</h2>
-<br>
 
 <div class="background">
     <div class="caixa-transparente">
         <p>Algum texto que está colocado em uma caixa transparente.</p>
-    </div>        
-
+    </div>
+</div>
+</section>
 <footer>
     <p>Copyright&copy; | Todos os direitos reservados a Enzo Mateus</p>
 </footer>
