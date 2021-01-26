@@ -65,10 +65,11 @@ overflow: auto;
     height: 60px;
     margin: auto;
     margin-bottom: 45px;
-    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.6);
-    background-color: rgb(255, 154, 154);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+    background-color: rgb(255, 144, 144);
 }
 
 .float-exemplo-button:hover {
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 121, 121);
 }
