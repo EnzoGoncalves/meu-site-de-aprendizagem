@@ -5,15 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
-    <style>
-        .formulario {
-            width: 80%;
-            padding: 5px;
-            margin: auto;
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
 <!-- BARRA DE NAVEGAÇÃO -->
@@ -72,15 +65,15 @@
     <h2>Meu formulário</h2>
 
     <form class="formulario">
-        <label for="pnome">Primeiro Nome:</label><br>
-        <input type="text" id="pnome"><br><br>
-        <label for="unome">Último Nome:</label><br>
-        <input type="text" id="unome"><br><br>
+        <label for="pnome" class="text-label">Primeiro Nome:</label><br>
+        <input type="text" id="pnome" placeholder="Primeiro Nome"><br><br>
+        <label for="unome" class="text-label">Último Nome:</label><br>
+        <input type="text" id="unome" placeholder="Último nome"><br><br>
 
         <input type="radio" id="rmasc" value="rmasc" name="genero">
-        <label for="rmasc">Masculino</label><br>
+        <label for="rmasc" class="radio-label">Masculino</label><br>
         <input type="radio" id="rfemin" value="rfemin" name="genero">
-        <label for="rfemin">Feminino</label><br><br><br>
+        <label for="rfemin" class="radio-label">Feminino</label><br><br><br>
 
         <p>Tenho: </p><br>
         <input type="checkbox" id="bike" value="bike">
