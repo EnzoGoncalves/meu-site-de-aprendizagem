@@ -97,11 +97,10 @@ footer p {
 /*CONTEÚDO*/
 
 .elemento {
-    letter-spacing: 0.7px;
+    letter-spacing: 1.2px;
     color: rgb(255, 0, 0);
     background-color: #c0c0c04d;
     padding: 1.5px;
-    font-weight: 550;
 }
 
 .nota {

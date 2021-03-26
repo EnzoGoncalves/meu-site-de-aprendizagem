@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.transform {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+.translate {
+    transform: translate(100px, 20px);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.scale {
+    width: 50px;
+    height: 50px;
+    transform: scale(2, 3);
+}
